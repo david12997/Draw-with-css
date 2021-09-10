@@ -1,0 +1,188 @@
+.contenedor-universal {
+  width: 400px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 20px;
+}
+
+.uva {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  z-index: 9999;
+  margin: -15px;
+  margin-bottom: -38px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.6),
+    inset -8px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.contenedor-ojos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contenedor-ojos > .ojo {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  margin: 10px;
+  margin-top: 26px;
+}
+
+.contenedor-ojos > .ojo > .brillo1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.contenedor-ojos > .ojo > .brillo2 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  margin-top: 6px;
+  margin-left: 22px;
+}
+
+.contenedor-boca {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.boca {
+  width: 30px;
+  height: 14px;
+  background-color: black;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.lengua {
+  width: 40%;
+  height: 50%;
+  background-color: red;
+  margin-top: 6px;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.uva-3 {
+  margin-left: 15%;
+}
+
+.uva-2 {
+  margin-right: 15%;
+}
+
+.contenedor-hojas {
+  margin-bottom: -25px;
+  margin-left: 38%;
+  width: 150px;
+  height: 150px;
+  background: green;
+  clip-path: polygon(
+    48% 54%,
+    78% 1%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    18% 2%
+  );
+}
+
+.color1 {
+  background: rgb(132, 20, 238);
+}
+
+.color2 {
+  background: rgb(156, 23, 209);
+}
+
+.ojo {
+  animation-duration: 0.5s;
+  animation-name: ojos;
+  animation-iteration-count: 5;
+  animation-delay: 0.5s;
+}
+
+.brillo1,
+.brillo2 {
+  animation-duration: 0.5s;
+  animation-name: brillos;
+  animation-iteration-count: 5;
+  animation-delay: 0.5s;
+}
+
+.contenedor-universal {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ojos {
+  0% {
+    background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.26) 30%,
+      rgb(0, 0, 0) 70%
+    );
+  }
+  50% {
+    background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.089) 50%,
+      rgba(0, 0, 0, 0.274) 50%
+    );
+  }
+
+  100% {
+    background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0) 30%
+    );
+  }
+}
+
+@keyframes brillos {
+  0% {
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.26) 40%,
+      rgba(255, 255, 255, 0.705) 60%
+    );
+  }
+  50% {
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.089) 60%,
+      rgba(255, 255, 255, 0.397) 40%
+    );
+  }
+
+  100% {
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 80%,
+      rgba(255, 255, 255, 0) 20%
+    );
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 30px;
+  }
+}

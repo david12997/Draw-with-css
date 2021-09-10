@@ -1,0 +1,745 @@
+.contenedor-dibujo {
+  margin: 40px;
+  margin-left: 20%;
+}
+
+.cabello-fondo {
+  width: 300px;
+  height: 300px;
+  background-color: purple;
+  border-radius: 50%;
+  position: relative;
+}
+
+.forma-cabello {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  margin: 27px;
+  background-color: rgb(134, 0, 134);
+}
+
+.forma-0 {
+  background: rgb(156, 1, 156);
+}
+
+.forma-1 {
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+  margin-left: 64px;
+  margin-top: 4px;
+}
+
+.forma-2 {
+  margin-left: 100px;
+  margin-top: -8px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+.forma-3 {
+  margin-left: 100px;
+  margin-top: -8px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+.forma-4 {
+  margin-left: 140px;
+  margin-top: -15px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-5 {
+  margin-left: 180px;
+  margin-top: -5px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-6 {
+  margin-left: 210px;
+  margin-top: 9px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-7 {
+  margin-left: 235px;
+  margin-top: 30px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-8 {
+  margin-left: 255px;
+  margin-top: 58px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-9 {
+  margin-left: 260px;
+  margin-top: 88px;
+}
+
+.forma-10 {
+  margin-left: 265px;
+  margin-top: 118px;
+}
+
+.forma-11 {
+  margin-left: 262px;
+  margin-top: 148px;
+}
+
+.forma-12 {
+  margin-left: 5px;
+  margin-top: 60px;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+}
+
+.forma-13 {
+  margin-left: -8px;
+  margin-top: 98px;
+}
+
+.forma-14 {
+  margin-left: -9px;
+  margin-top: 138px;
+}
+
+.forma-15 {
+  margin-left: -5px;
+  margin-top: 170px;
+}
+
+.forma-16 {
+  margin-left: 2px;
+  margin-top: 207px;
+}
+
+.forma-17 {
+  margin-left: 28px;
+  margin-top: 235px;
+}
+
+.forma-18 {
+  margin-left: 60px;
+  margin-top: 260px;
+}
+
+.forma-19 {
+  margin-left: 2px;
+  margin-top: 207px;
+}
+
+.forma-20 {
+  margin-left: 28px;
+  margin-top: 235px;
+}
+
+.forma-21 {
+  margin-left: 225px;
+  margin-top: 234px;
+}
+
+.forma-22 {
+  margin-left: 260px;
+  margin-top: 180px;
+}
+
+.forma-23 {
+  margin-left: 245px;
+  margin-top: 210px;
+}
+
+.cabello-fondo::before {
+  content: "";
+  width: 90%;
+  margin-left: 7%;
+  height: 70%;
+  border-radius: 50%;
+  background: rgb(156, 1, 156);
+  z-index: 9999;
+  position: absolute;
+  margin-top: 2%;
+  z-index: 99999;
+}
+.cabello-fondo::after {
+  margin-top: 50%;
+  content: "";
+  width: 90%;
+  margin-left: 5%;
+  height: 50%;
+  border-radius: 50%;
+  background: purple;
+  z-index: 9999;
+  position: absolute;
+}
+
+.contenedor-cabeza {
+  width: 185px;
+  height: 230px;
+  background: pink;
+  position: absolute;
+  border-radius: 10%;
+  margin-top: -195px;
+  margin-left: 60px;
+  z-index: 9999999;
+}
+
+.pelo-frente {
+  width: 100%;
+  height: 60px;
+  background: rgb(156, 1, 156);
+}
+
+.pelo1,
+.pelo2,
+.pelo3,
+.pelo4 {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgb(156, 1, 156);
+  margin-top: 30px;
+  position: absolute;
+}
+
+.pelo2 {
+  margin-left: 45px;
+}
+.pelo3 {
+  margin-left: 85px;
+}
+.pelo4 {
+  margin-left: 130px;
+}
+
+.pelo4::before {
+  content: "";
+  margin-left: 2px;
+  margin-top: 20px;
+  width: 51px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.196);
+  position: absolute;
+}
+
+.pelo3::before {
+  content: "";
+  margin-left: 2px;
+  margin-top: 20px;
+  width: 51px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.196);
+  position: absolute;
+}
+
+.pelo2::before {
+  content: "";
+  margin-left: 2px;
+  margin-top: 20px;
+  width: 51px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.196);
+  position: absolute;
+}
+.pelo1::before {
+  content: "";
+  margin-left: 2px;
+  margin-top: 20px;
+  width: 51px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.196);
+  position: absolute;
+}
+
+/*after pelos*/
+
+.pelo4:after {
+  content: "";
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 55px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(156, 1, 156);
+  position: absolute;
+}
+
+.pelo3:after {
+  content: "";
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 55px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(156, 1, 156);
+  position: absolute;
+}
+
+.pelo2:after {
+  content: "";
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 55px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(156, 1, 156);
+  position: absolute;
+}
+.pelo1:after {
+  content: "";
+  margin-left: 0px;
+  margin-top: 5px;
+  width: 55px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(156, 1, 156);
+  position: absolute;
+}
+
+.uniceja {
+  width: 150px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(156, 1, 156);
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 15px;
+  box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.781),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.863);
+}
+
+.uniceja::before {
+  content: "";
+  width: 50px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.305);
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.uniceja::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.096);
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 17px;
+}
+
+.contenedor-ojos {
+  margin-top: 43px;
+  width: 150px;
+  height: 30px;
+
+  margin-left: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ojo1,
+.ojo2 {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ojo1::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-top: 7px;
+}
+
+.ojo2::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-top: 7px;
+}
+
+.contenedor-nariz {
+  margin-top: 8px;
+  width: 150px;
+  height: 15px;
+
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.fosa1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(196, 148, 156);
+  position: absolute;
+  margin-left: 14px;
+}
+
+.fosa2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(196, 148, 156);
+  position: absolute;
+  margin-right: 14px;
+}
+
+.contenedor-boca {
+  margin-top: 8px;
+  width: 150px;
+  height: 45px;
+  background-color: black;
+  margin-left: 17px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.dientes {
+  margin-left: 9%;
+  width: 80%;
+  height: 30%;
+  background-color: white;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.lengua {
+  margin-top: 11%;
+  margin-left: 15%;
+  width: 70%;
+  height: 34%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.contenedor-orejas {
+  width: 140%;
+  height: 35px;
+  margin-left: -20%;
+  position: absolute;
+  margin-top: -50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oreja1,
+.oreja2 {
+  width: 40px;
+  height: 40px;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.oreja1::before {
+  content: "";
+  border-radius: 20px;
+  width: 21px;
+  height: 8px;
+  background-color: rgb(202, 153, 161);
+  position: absolute;
+  transform: rotate(45deg);
+  margin-top: 15px;
+  margin-left: 6px;
+}
+.oreja1::after {
+  content: "";
+  border-radius: 20px;
+  width: 21px;
+  height: 8px;
+  background-color: rgb(202, 153, 161);
+  position: absolute;
+  transform: rotate(-45deg);
+  margin-top: 15px;
+  margin-left: 6px;
+}
+
+.oreja2::before {
+  content: "";
+  border-radius: 20px;
+  width: 21px;
+  height: 8px;
+  background-color: rgb(202, 153, 161);
+  position: absolute;
+  transform: rotate(45deg);
+  margin-top: 15px;
+  margin-left: 9px;
+}
+.oreja2::after {
+  content: "";
+  border-radius: 20px;
+  width: 21px;
+  height: 8px;
+  background-color: rgb(202, 153, 161);
+  position: absolute;
+  transform: rotate(-45deg);
+  margin-top: 15px;
+  margin-left: 9px;
+}
+
+.contenedor-cuerpo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+.cuello {
+  z-index: 9999999;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  height: 30px;
+  background-color: rgb(17, 85, 0);
+  border-radius: 30px;
+}
+
+.cuello::before {
+  content: "";
+  width: 30%;
+  height: 12px;
+  background-color: rgb(37, 160, 0);
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-left: 13px;
+}
+
+.cuerpo {
+  width: 74%;
+  height: 100px;
+  background-color: green;
+  margin-left: 13%;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.pantalones {
+  width: 74%;
+  height: 70px;
+  background-color: rgb(0, 0, 61);
+  margin-left: 13%;
+  margin-top: -18px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pantalones::before {
+  content: "";
+  width: 74%;
+  height: 10%;
+  background-color: rgba(2, 133, 2, 0.253);
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pierna1,
+.pierna2 {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(0, 0, 61);
+  margin-top: 50px;
+}
+
+.pie1,
+.pie2 {
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  background-color: pink;
+  margin-top: 50px;
+}
+
+.zapato1,
+.zapato2 {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 0, 61);
+  margin-top: 50px;
+}
+
+.zapato1 {
+  margin-left: -24px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.zapato2 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+.zapato1::before {
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.153);
+  position: absolute;
+  margin: 10px;
+}
+
+.zapato2::before {
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.153);
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.brazos {
+  margin-left: 3%;
+  width: 94%;
+  height: 150px;
+
+  position: absolute;
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brazo1,
+.brazo2 {
+  width: 60px;
+  height: 100%;
+  background: pink;
+  border-radius: 30px;
+  z-index: -1;
+}
+.brazo1 {
+  transform: rotate(15deg);
+}
+.brazo2 {
+  transform: rotate(-15deg);
+  animation-name: mover-brazo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.ojo1::before {
+  animation-name: mover-ojo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.ojo2::before {
+  animation-name: mover-ojo2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.uniceja {
+  animation-name: mover-ceja;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.contenedor-dibujo {
+  animation-name: mover-dibujo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover-brazo {
+  0% {
+    transform: rotate(-15deg);
+    margin-right: 0px;
+  }
+
+  50% {
+    transform: rotate(-150deg);
+    margin-right: -30px;
+    margin-top: -100px;
+  }
+
+  100% {
+    transform: rotate(-15deg);
+    margin-right: 0px;
+  }
+}
+
+@keyframes mover-ojo {
+  0% {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: 10px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes mover-ojo2 {
+  0% {
+    margin-left: 5px;
+  }
+
+  50% {
+    margin-left: 15px;
+  }
+
+  100% {
+    margin-left: 5px;
+  }
+}
+
+@keyframes mover-ceja {
+  0% {
+    margi-top: 30px;
+  }
+
+  50% {
+    margin-top: 20px;
+  }
+
+  100% {
+    margin-top: 30px;
+  }
+}
+
+@keyframes mover-dibujo {
+  0% {
+    margi-top: 40px;
+  }
+
+  50% {
+    margin-top: 45px;
+  }
+
+  100% {
+    margin-top: 40px;
+  }
+}
