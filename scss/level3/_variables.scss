@@ -1,0 +1,40 @@
+//shape hair
+$colorShapeHair :(
+
+    'black': black,
+    'purple1': purple,
+    'purple2': rgb(134, 0, 134),
+    'purple3': rgb(156, 1, 156)
+);
+$zIndexShape:9999;
+$dataShapeHair:0 $zIndexShape 22px 22px,
+               1 $zIndexShape 64px 4px,
+               2 $zIndexShape 100px -8px,
+               3 $zIndexShape 100px -8px,
+               4 $zIndexShape 145px -15px,
+               5 $zIndexShape 180px -5px,
+               6 $zIndexShape 210px 9px,
+               7 $zIndexShape 235px 30px,
+               8 $zIndexShape 255px 58px,
+               9 $zIndexShape 260px 88px,
+               10 $zIndexShape 265px 118px,
+               11 $zIndexShape 262px 148px,
+               12 $zIndexShape 5px 60px,
+               13 $zIndexShape -8px 98px,
+               14 $zIndexShape -9px 138px,
+               15 $zIndexShape -5px 170px,
+               16 $zIndexShape 2px 207px,
+               17 $zIndexShape 28px 235px,
+               18 $zIndexShape 60px 260px,
+               19 $zIndexShape 2px 207px,
+               20 $zIndexShape 28px 235px,
+               21 $zIndexShape 225px 234px,
+               22 $zIndexShape 260px 180px,
+               23 $zIndexShape 245px 210px;
+
+//head single hair
+
+$singleHead_hair_before: '1::before','2::before','3::before','4::before';
+$singleHead_hair_after: '1::after','2::after','3::after','4::after';
+
+$skin_color:rgb(255, 168, 182)

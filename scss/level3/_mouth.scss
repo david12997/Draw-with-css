@@ -1,0 +1,28 @@
+@mixin mouth($w,$h,$b,$mleft,$borderRight,$borderLeft) {
+  
+  width: #{$w};
+  height: #{$h};
+  background-color: #{$b};
+  margin-left: #{$mleft};
+  border-bottom-right-radius: #{$borderRight};
+  border-bottom-left-radius: #{$borderLeft};
+}
+
+.mouth {
+  margin-top: 8px;
+  @include mouth(150px,45px,black,17px ,200px ,200px);
+}
+
+.mouth__teeth {
+
+  @include mouth(80%,30%,white,9% ,100px ,100px);
+}
+
+.mouth__tongue {
+  margin-top: 11%;
+  margin-left: 15%;
+  width: 70%;
+  height: 34%;
+  background-color: red;
+  border-radius: 50%;
+}

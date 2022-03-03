@@ -1,0 +1,89 @@
+.pants {
+  width: 74%;
+  height: 70px;
+  background-color: rgb(0, 0, 61);
+  margin-left: 13%;
+  margin-top: -18px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pants::before {
+  content: "";
+  width: 74%;
+  height: 10%;
+  background-color: rgba(2, 133, 2, 0.253);
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@mixin pants_foot($w,$h,$b,$mt){
+
+  width: #{$w};
+  height: #{$h};
+  background-color: #{$b};
+  margin-top: #{$mt};
+}
+
+.pants__leg1,
+.pants__leg2 {
+
+  @include pants_foot(70px,50px ,rgb(0, 0, 61), 50px);
+
+}
+
+.foot1,
+.foot2 {
+
+  @include pants_foot(80%,50px ,$skin_color, 50px);
+  margin-left: 10%;
+
+}
+
+.foot1__shoes1,
+.foot2__shoes2 {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 0, 61);
+  margin-top: 50px;
+}
+
+
+.foot1__shoes1 {
+  margin-left: -24px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.foot2__shoes2 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+
+%foot_shoes_before{
+
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.153);
+  position: absolute;
+}
+
+.foot1__shoes1::before {
+
+  @extend %foot_shoes_before;
+  margin: 10px;
+}
+
+.foot2__shoes2::before {
+  
+  @extend %foot_shoes_before;
+  margin-left: 37px;
+  margin-top: 10px;
+}

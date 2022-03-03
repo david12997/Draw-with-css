@@ -1,0 +1,56 @@
+.eyebrow {
+
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: map-get($map: $colorShapeHair, $key:'purple3' );
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+    box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.781),
+                inset 1px 1px 3px rgba(255, 255, 255, 0.863);
+    animation-name: move_eyebrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@mixin eyebrow_before($width,$height,$border,$mtop){
+
+    content: "";
+    width: #{$width};
+    height: #{$height};
+    background-color: rgba(0, 0, 0, 0.096);
+    position: absolute;
+    border-radius: #{$border};
+    margin-top: #{$mtop};
+}
+
+.eyebrow::before {
+
+    @include eyebrow_before(50px,6px ,5px ,6px );
+    background-color: rgba(255, 255, 255, 0.305);
+    margin-left: 10px;
+}
+
+.eyebrow::after {
+
+    @include eyebrow_before(100%,15px,20px ,17px );
+    background-color: rgba(0, 0, 0, 0.096);
+ 
+}
+
+
+
+  @keyframes move_eyebrow {
+    0% {
+      margi-top: 30px;
+    }
+  
+    50% {
+      margin-top: 20px;
+    }
+  
+    100% {
+      margin-top: 30px;
+    }
+  }

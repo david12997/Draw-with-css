@@ -1,0 +1,23 @@
+  
+.containerMouth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mouth {
+    width: 30px;
+    height: 14px;
+    background-color: black;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: center;
+    }
+
+.mouth__tongue {
+    width: 40%;
+    height: 50%;
+    background-color: red;
+    margin-top: 6px;
+    border-radius: 0px 0px 30px 30px;
+}

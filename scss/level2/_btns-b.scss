@@ -1,0 +1,93 @@
+
+%center{
+    display: flex;
+    justify-content: space-around;
+}
+.btnB {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    margin-top: 85%;
+    @extend %center;
+  }
+  
+  .btnB__container1,
+  .btnB__container2 {
+    width: 40%;
+    height: 90%;
+    margin: 2%;
+  }
+  
+  .btnB__container1 {
+
+    @extend %center;
+    align-items: center;
+  }
+  
+  .btnB__btn1 {
+    border-radius: 20px;
+    transform: rotate(135deg);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 196, 0);
+    clip-path: polygon(
+      20% 0%,
+      0% 20%,
+      30% 50%,
+      0% 80%,
+      20% 100%,
+      50% 70%,
+      80% 100%,
+      100% 80%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      50% 30%
+    );
+  }
+  
+  .btnB__container2 {
+    display: block;
+  }
+  
+  .containerFigures {
+    width: 100%;
+    height: 50%;
+    @extend %center;
+  }
+  
+  .containerFigures__triangulo {
+    width: 35px;
+    height: 25px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: red;
+    margin-left: -10px;
+  }
+  
+  .containerFigures__circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(0, 211, 56);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.34),
+      inset -1px -1px 1px rgba(0, 0, 0, 0.44),
+      inset 1px 1px 1px rgba(255, 255, 255, 0.596);
+  }
+  
+  .btnsC {
+    @extend %center;
+    width: 90%;
+    height: 80%;
+    margin-top: 5px;
+  }
+  
+  .btnsC__btn {
+    width: 50%;
+    height: 50%;
+    background-color: purple;
+    border-radius: 10%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.34),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.44),
+      inset 1px 1px 1px rgba(255, 255, 255, 0.596);
+  }
+  

@@ -1,0 +1,51 @@
+.arms {
+    margin-left: 3%;
+    width: 94%;
+    height: 150px;
+  
+    position: absolute;
+    margin-top: -150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .arms__1,
+  .arms__2 {
+    width: 60px;
+    height: 100%;
+    background: $skin_color;
+    border-radius: 30px;
+    z-index: -1;
+  }
+  .arms__1 {
+    transform: rotate(15deg);
+  }
+  .arms__2 {
+    transform: rotate(-15deg);
+    animation-name: move_arms;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+
+
+  
+
+  @keyframes move_arms {
+    0% {
+      transform: rotate(-15deg);
+      margin-right: 0px;
+    }
+  
+    50% {
+      transform: rotate(-150deg);
+      margin-right: -30px;
+      margin-top: -100px;
+    }
+  
+    100% {
+      transform: rotate(-15deg);
+      margin-right: 0px;
+    }
+  }
+  

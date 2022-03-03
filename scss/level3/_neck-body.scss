@@ -1,0 +1,37 @@
+.containerBody {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+  }
+  
+  .neck {
+    z-index: 9999999;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+    height: 30px;
+    background-color: rgb(17, 85, 0);
+    border-radius: 30px;
+  }
+  
+  .neck::before {
+    content: "";
+    width: 30%;
+    height: 12px;
+    background-color: rgb(37, 160, 0);
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left: 13px;
+  }
+  
+  .body {
+    width: 74%;
+    height: 100px;
+    background-color: green;
+    margin-left: 13%;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  

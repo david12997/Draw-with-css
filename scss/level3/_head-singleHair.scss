@@ -1,0 +1,84 @@
+.containerHead {
+
+  width: 185px;
+  height: 230px;
+  background: #{$skin_color};
+  position: absolute;
+  border-radius: 10%;
+  margin-top: -195px;
+  margin-left: 60px;
+  z-index: 9999999;
+}
+
+.SingleHead {
+  width: 100%;
+  height: 60px;
+  background: map-get($map: $colorShapeHair, $key: 'purple3' );
+}
+
+.singleHead__hair--hair1,
+.singleHead__hair--hair2,
+.singleHead__hair--hair3,
+.singleHead__hair--hair4 {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color:map-get($map: $colorShapeHair, $key: 'purple3' );
+  margin-top: 30px;
+  position: absolute;
+}
+
+.singleHead__hair--hair2 {
+  margin-left: 45px;
+}
+.singleHead__hair--hair3 {
+  margin-left: 85px;
+}
+.singleHead__hair--hair4 {
+  margin-left: 130px;
+}
+  
+@mixin singleHead_hair_before($modifier){
+
+  .singleHead__hair--hair#{$modifier}{
+
+    content: "";
+    margin-left: 2px;
+    margin-top: 20px;
+    width: 51px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.196);
+    position: absolute;
+  }
+}
+
+@each $modifier in $singleHead_hair_before {
+  
+  @include singleHead_hair_before($modifier)
+}
+
+
+/*after singleHead__hair--hairs*/
+
+
+
+@mixin singleHead_hair_after($modifier){
+
+  .singleHead__hair--hair#{$modifier}{
+
+    content: "";
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 55px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: map-get($map: $colorShapeHair, $key: 'purple3' );
+    position: absolute;
+  }
+}
+
+@each $modifier in $singleHead_hair_after {
+  
+  @include singleHead_hair_after($modifier)
+}

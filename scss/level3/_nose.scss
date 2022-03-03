@@ -1,0 +1,28 @@
+.containerNose {
+  margin-top: 8px;
+  width: 150px;
+  height: 15px;
+
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin nose($prop){
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(196, 148, 156);
+  position: absolute;
+  #{$prop}: 14px;
+}
+.containerNose__nostril1 {
+
+  @include nose( margin-left);
+
+}
+
+.containerNose__nostril2 {
+  @include nose( margin-right );
+}

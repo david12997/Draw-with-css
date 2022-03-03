@@ -1,0 +1,25 @@
+{
+  "name": "draw_with_css",
+  "version": "1.0.0",
+  "description": "At this repository you find three  animation draws  made with CSS and HTML",
+  "main": "index.html",
+  "scripts": {
+    "sass1": "sass --watch scss/level1.scss:level1/index.css",
+    "sass2": "sass --watch scss/level2.scss:level2/index.css",
+    "sass3": "sass --watch scss/level3.scss:level3/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david12997/Draw_with_css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david12997/Draw_with_css/issues"
+  },
+  "homepage": "https://github.com/david12997/Draw_with_css#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

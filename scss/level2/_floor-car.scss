@@ -1,0 +1,61 @@
+
+@mixin animationn_floor($name){
+
+    animation-name: #{$name};
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.containerFloor {
+    width: 100%;
+    height: 50px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.floor {
+    width: 400px;
+    height: 50px;
+    background-color: green;
+    margin-top: 70%;
+    border-radius: 50%;
+    @include animationn_floor(floor);
+
+}
+
+.floor__car {
+    width: 70px;
+    transform: rotate(-20deg);
+    @include animationn_floor(car);
+
+}
+
+
+
+@keyframes car {
+
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 350px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes floor {
+
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 70px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+

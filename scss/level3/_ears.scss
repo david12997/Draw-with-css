@@ -1,0 +1,55 @@
+.ears {
+    width: 140%;
+    height: 35px;
+    margin-left: -20%;
+    position: absolute;
+    margin-top: -50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ears__1,
+.ears__2 {
+    width: 40px;
+    height: 40px;
+    background-color: #{$skin_color};
+    border-radius: 50%;
+}
+
+@mixin  ears($transform,$mleft) {
+    
+    content: "";
+    border-radius: 20px;
+    width: 21px;
+    height: 8px;
+    background-color: rgb(202, 153, 161);
+    position: absolute;
+    transform: #{$transform};
+    margin-top: 15px;
+    margin-left: #{$mleft};
+
+}
+
+.ears__1::before {
+
+    @include ears(rotate(45deg),6px );
+}
+
+.ears__1::after {
+
+    @include ears(rotate(-45deg),6px );
+
+}
+
+
+.ears__2::before {
+
+    @include ears(rotate(45deg),9px );
+
+}
+
+.ears__2::after {
+
+    @include ears(rotate(-45deg),9px );
+
+}

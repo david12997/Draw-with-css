@@ -1,0 +1,96 @@
+body{
+
+    display: flex;
+    justify-content: center;
+}
+.containerDraw {
+    transform: scale(0.9);
+    animation-name: move_draw;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move_draw {
+    0% {
+      margi-top: 40px;
+    }
+  
+    50% {
+      margin-top: 45px;
+    }
+  
+    100% {
+      margin-top: 40px;
+    }
+  }
+  
+
+
+
+@mixin hair_background($width,$height,$background,$border,$position) {
+    
+    width: #{$width};
+    height: #{$height};
+    background:  map-get($map: $colorShapeHair, $key:$background);
+    border-radius: #{$border};
+    position: #{$position};
+}
+
+.hairBackground {
+
+    @include hair_background(300px,300px,'purple1',50%,relative );
+}
+
+.hairBackground__shapeHair  {
+
+    @include hair_background(50px,50px,'purple2',50%,absolute );
+    margin: 27px;
+ 
+}
+
+@mixin shapeHair($modifier,$zIndex,$mLeft,$mTop){
+
+.hairBackground__shapeHair--#{$modifier}{
+
+    z-index: #{$zIndex};
+    margin-left: #{$mLeft};
+    margin-top: #{$mTop};
+
+    @if $modifier < 8{
+
+        background: map-get($map: $colorShapeHair, $key:'purple3' );
+    }
+}
+
+}
+
+@each $modifier, $zIndex, $mLeft, $mTop  in $dataShapeHair {
+
+@include shapeHair($modifier,$zIndex ,$mLeft ,$mTop );
+}
+
+
+
+@mixin hairBackground_before_after($mleft,$mtop,$height,$background){
+
+    content: "";
+    width: 90%;
+    margin-left: #{$mleft};
+    margin-top: #{$mtop};
+    height: #{$height};
+    border-radius: 50%;
+    background:  map-get($map: $colorShapeHair, $key:$background );
+    z-index: 99999;
+    position: absolute;
+}
+.hairBackground::before {
+
+    @include hairBackground_before_after(7%,2%,70% ,'purple3' );
+
+}
+.hairBackground::after {
+
+    @include hairBackground_before_after(5%,50%,50% ,'purple1' );
+
+}
