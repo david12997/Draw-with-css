@@ -6,15 +6,15 @@
 + Watch live Level 1 :
 
 ## Level 3 
-![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/character-post.jpg)
+![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/character.jpg)
 > Animate character
 
 ## Level 2
-![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/bimo.jpg)
+![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/bimo.png)
 > Bimo console
 
 ## Level 1 
-![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/grapes-post.jpg)
+![](https://jdcastaneda.ml/tienda/wp-content/uploads/2022/04/grapes.jpg)
 > Grapes
 
 ## Tools
