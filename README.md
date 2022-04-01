@@ -10,7 +10,7 @@
 > Animate character
 
 ## Level 2
-![](https://scontent.fbog2-3.fna.fbcdn.net/v/t39.30808-6/241772635_133222042366522_8676924253438930037_n.png?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=0Q7lNHqX3hcAX9ZQlJ7&_nc_ht=scontent.fbog2-3.fna&oh=00_AT8I1dIP9PvdM-4HXtXLG7ksZzA5kx4tNZIq3t5olKnJRA&oe=62267814)
+![](https://drive.google.com/file/d/17nVZ_SYRO3NxeCYpCKOg0bizz_bAkD37/view?usp=sharing)
 > Bimo console
 
 ## Level 1 
